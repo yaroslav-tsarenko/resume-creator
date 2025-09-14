@@ -1,12 +1,7 @@
-"use client"
+import {PDFDownloadButton} from '../utils/pdf-constructor/PDFDownloadButton';
 
-import React from 'react';
-import ResumeExport from '@/components/ResumeExport';
-
-const Page = () => {
+export default function Page() {
     return (
-        <ResumeExport/>
+        <PDFDownloadButton/>
     );
-};
-
-export default Page;
+}

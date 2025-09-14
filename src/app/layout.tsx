@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import { PDFProvider } from '@/context/pdf-context/PDFContext';
 
 const generateMetadata = () => {
     return {
@@ -22,16 +22,11 @@ export default function RootLayout({
                 href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
                 rel="stylesheet"
             />
-            <link
-                rel="prefetch"
-                href="/assets/font/Google-Sans/GoogleSans-Regular.ttf"
-                as="font"
-                type="font/ttf"
-                crossOrigin="anonymous"
-            />
         </head>
         <body>
-        {children}
+        <PDFProvider>
+            {children}
+        </PDFProvider>
         </body>
         </html>
     );
