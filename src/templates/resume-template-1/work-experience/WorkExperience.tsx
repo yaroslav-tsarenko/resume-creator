@@ -95,7 +95,7 @@ export const WorkExperienceSection = ({
     experiences: WorkExperience[];
 }) => (
     <View>
-        <Text style={workStyles.title}>Work Experience</Text>
+        <Text style={workStyles.title}>Professional Experience</Text>
         <View style={workStyles.works}>
             {experiences.map((exp, idx) => (
                 <View key={idx} style={workStyles.item}>
